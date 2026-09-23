@@ -1,0 +1,76 @@
+/* 1. Aplica box-sizing border-box em tudo (facilita cálculo de larguras) */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove margens e preenchimentos padrão que variam por navegador */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* 3. Garante que elementos de mídia não estourem a tela (Layout Fluido) */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* 4. Configurações base do documento */
+html {
+  /* Suporta temas claro/escuro automáticos do sistema operacional */
+  color-scheme: light dark;
+  /* Melhora o comportamento de rolagem ao usar âncoras */
+  scroll-behavior: smooth;
+}
+
+body {
+  /* Ocupa pelo menos 100% da altura da tela visível */
+  min-height: 100vh;
+  /* Altura de linha limpa e confortável para leitura */
+  line-height: 1.5;
+  /* Melhora a renderização e suavização de fontes */
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 5. Herança de tipografia para elementos de formulário */
+input, button, textarea, select {
+  font: inherit;
+}
+
+/* 6. Evita estouro de texto longo em parágrafos */
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+/* 7. Melhora a quebra de linha estética para títulos e textos */
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+}
+p {
+  text-wrap: pretty;
+}
+
+/* 8. Remove estilos de lista apenas quando usadas para estrutura/layout */
+ul[class], ol[class] {
+  list-style: none;
+}
+
+/* 9. Mantém os links com a cor do texto pai a menos que especificado */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+  color: currentColor;
+}
+
+/* 10. Respeita as configurações do usuário que prefere menos animações (Acessibilidade) */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

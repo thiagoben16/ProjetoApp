@@ -1,12 +1,13 @@
 
 
-@media screen and (max-width: 640px) {
+@media screen and (min-width:367px) and (max-width: 472px) {
     /* Seus estilos para smartphone entram aqui */
     body{
         width: 100vw;
         height: 100vh;
         max-height: 100%;
         overflow-y: hidden;
+        background: linear-gradient(to right, #FAF8F5 50% #edcac4 100%);
     }
 
     /* Cabecalho*/
@@ -19,8 +20,8 @@
     }
 
     header img{
-        width: 3rem;
-        height: 3rem;
+        width: 5rem;
+        height: 5rem;
     }
     header h1{
         color: #B2351F
@@ -43,31 +44,31 @@
     }
 
     .container-principal{
-        width: 80%;
+        width: 90%;
         height: auto;
         display: flex;
         justify-content: center;
         flex-direction: row;
         flex-wrap: wrap;
-        gap: 2rem;
+        gap: 1rem;
 
     }
     
 
     .cards button{
-        width: 8rem;
-        height: 9rem;
+        width: 5rem;
+        height: 5rem;
         display: flex;
         flex-direction: column;
         background-color: #edcac4;
-        padding: 1rem 1rem;
+        padding: 0.5rem 0;
         border-radius: 0.5rem;
         box-shadow: 2px 2px 5px #B2351F;
         border: none;
         cursor: pointer;
         box-sizing: border-box;
         transition: all ease-in-out 0.2s;
-        font-size: 14px;
+        font-size: 10px;
 
     }
     button img{

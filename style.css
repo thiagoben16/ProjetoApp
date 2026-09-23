@@ -67,9 +67,9 @@
         border: none;
         cursor: pointer;
         box-sizing: border-box;
-        transition: all ease-in-out 0.08s;
+        transition: all ease-in-out 0.2s;
         font-size: 10px;
-        touch-action: manipulation;
+        /*touch-action: manipulation;*/
         -webkit-tap-highlight-color: transparent;
         -webkit-user-select: none !important;
         -moz-user-select: none;     /* Desativa no Firefox */

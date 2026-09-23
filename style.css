@@ -55,11 +55,12 @@
     }
     
 
-    .cards button{
+    .cards a{
         width: 5rem;
         height: 5rem;
         display: flex;
         flex-direction: column;
+        align-items: center ;
         background-color: #edcac4;
         padding: 0.5rem 0;
         border-radius: 0.5rem;
@@ -77,12 +78,12 @@
         user-select: none;
 
     }
-    button img{
+    a img{
         height: 80%;
         pointer-events: none;
     }
 
-    button p{
+    a p{
         pointer-events: none;
         height: 20%;       
         color: #B2351F;
@@ -90,7 +91,7 @@
         user-select: none;
     }
 
-    .cards button:active{
+    .cards a:active{
         transform: scale(0.95);
         box-shadow: inset 0 4px 8px rgba(241, 140, 140, 0.9);
     }

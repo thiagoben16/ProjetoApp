@@ -66,8 +66,7 @@
         box-shadow: 2px 2px 5px #B2351F;
         border: none;
         cursor: pointer;
-        box-sizing: border-box;
-        transition: all ease-in-out 0.2s;
+        box-sizing: border-box;        
         font-size: 10px;
 
     }

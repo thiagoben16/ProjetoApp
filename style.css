@@ -105,7 +105,12 @@
     .cards button:active{
        background-color: #B2351F;
        color: #f6e7e4;
-    }   
+       
+    } 
+    
+    .cards button:active img{
+        filter: brightness(0) invert(1);
+    }
     button img{
         width: 50%;
         height: 55%;

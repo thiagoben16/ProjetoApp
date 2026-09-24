@@ -94,20 +94,24 @@
         -ms-user-select: none;      /* Desativa no Internet Explorer antigo */
         user-select: none;
         color: #B2351F;
+        -webkit-appearance: none;
+        appearance: none;
 
     }
+    .cards button:focus,
+    .cards button:focus-visible {
+        outline: none;
+    }
+    .cards button:active{
+       background-color: #B2351F;
+       color: #f6e7e4;
+    }   
     button img{
         width: 50%;
         height: 55%;
         margin-bottom: 4px;
         pointer-events: none;
        
-    }
-
-
-    .cards button:active{
-        transform: scale(0.95);
-        box-shadow: inset 0 4px 8px rgba(241, 140, 140, 0.9);
     }
 
     footer{

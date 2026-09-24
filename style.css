@@ -87,7 +87,7 @@
         box-sizing: border-box;
         transition: transform 0.001s ease-out, box-shadow 0.001s ease-out;
         font-size: 10px;
-        touch-action: manipulation;
+        /*touch-action: manipulation;*/
         -webkit-tap-highlight-color: transparent;
         -webkit-user-select: none !important;
         -moz-user-select: none;     /* Desativa no Firefox */
